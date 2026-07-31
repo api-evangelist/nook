@@ -1,7 +1,28 @@
 aid: nook
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nook.png
 name: Nook
-description: Nook is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Nook is an accounts payable (AP) automation platform for businesses,
+  combining invoice management with automated payment workflows to reduce
+  manual data entry, cut errors, and give finance teams clearer visibility over
+  outgoings. Founded in the UK and backed by Speedinvest as an early investor,
+  Nook was acquired by payments infrastructure provider Modulr; its product now
+  operates as "Modulr AP" and its former standalone site at nook.io presents the
+  combined Modulr AP offering. Nook does not publish an independent public
+  developer platform, API reference, or SDKs — the payment rails are provided
+  through Modulr's platform — so this profile is maintained as a company record
+  rather than an API-bearing provider.
 url: https://raw.githubusercontent.com/api-evangelist/nook/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +30,32 @@ x-backed-by:
 - speedinvest
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: modulr
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Accounts Payable
+- Payments
+- Invoice Automation
+- Spend Management
+- B2B
+- Financial Operations
+common:
+- type: DomainSecurity
+  url: security/nook-domain-security.yml
+- type: Website
+  url: https://nook.io
+- type: Login
+  url: https://app.modulrfinance.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 apis: []
 maintainers:
 - FN: Kin Lane
